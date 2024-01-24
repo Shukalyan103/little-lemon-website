@@ -1,8 +1,14 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Bookingpage from './Bookingpage'
 
 function Main() {
   return (
-    <>Main</>
+   <>
+   <Routes>
+    <Route path='/booking' element={<Bookingpage />}></Route>
+   </Routes>
+   </>
   )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import "../App.css"
 import resturantFood from "../assets/images/restauranfood.jpg"
+import { Link} from 'react-router-dom';
+
 
 
 
@@ -14,8 +16,9 @@ function Header() {
       <h1>Little Lemon</h1>
       <h3>Chicago</h3>
       <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-      <button className='btn'>Reserve a table</button>
+      <Link to="/Bookingpage"><button className='btn'>Reserve a table</button></Link>
       </section>
+      
      <div>
     <img src={resturantFood} alt='food'/>
      </div>
