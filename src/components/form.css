@@ -1,0 +1,84 @@
+header {
+    background-color: rgb(73, 94, 87);
+    height: 60vh;
+}
+
+.field {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.pic img {
+    width: 450px;
+}
+
+.form-details {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    justify-items: flex-end;
+    justify-content: start;
+    align-content: center;
+}
+
+.form-details div {
+    margin: auto;
+    padding-bottom: 29px;
+}
+
+.btn3 {
+    background-color: #F4CE14;
+    color: black;
+    padding: 14px 18px;
+    border: none;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input,
+select,
+label {
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+@media screen and (max-width : 800px) {
+    .field {
+        flex-wrap: wrap;
+    }
+
+    .pic img {
+        display: none;
+    }
+
+    .form-details {
+        display: block;
+    }
+}
+
+.confirm-page {
+    background-color: rgb(73, 94, 87);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.confirm-page div h1 {
+    font-family: 'Markazi Text', serif;
+    font-weight: bolder;
+}
+span{
+    color: #F4CE14;
+    padding-left: 7px;
+}

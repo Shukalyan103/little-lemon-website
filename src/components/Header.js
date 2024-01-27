@@ -11,7 +11,7 @@ import { Link} from 'react-router-dom';
 function Header() {
   return (
     <>
-    <header>
+    <header className='header1'>
      <section className='intro'>
       <h1>Little Lemon</h1>
       <h3>Chicago</h3>

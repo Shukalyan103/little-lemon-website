@@ -97,7 +97,7 @@ nav button {
 }
 
 /* styling navbar ends here*/
-header {
+.header1 {
   background-color: rgb(73, 94, 87);
   height: 60vh;
   display: flex;
@@ -105,32 +105,32 @@ header {
   justify-content: space-evenly;
 }
 
-header div img {
+.header1 div img {
   width: 265px;
   top: 79px;
   height: 285px;
   border-radius: 10px;
 }
 
-header .intro * {
+.header1 .intro * {
   padding: 7px;
 
 }
 
-header .intro p {
+.header1 .intro p {
   width: 176px;
   color: rgb(237, 239, 238);
   font-family: 'Karla', sans-serif;
   font-weight: bold;
 }
 
-header .intro h1 {
+.header1 .intro h1 {
   color: rgb(244, 206, 20);
   font-family: 'Markazi Text', serif;
   font-size: 50px;
 }
 
-header .intro h3 {
+.header1 .intro h3 {
   font-size: 30px;
   font-family: 'Markazi Text', serif;
 }
@@ -149,7 +149,7 @@ header .intro h3 {
 
 @media screen and (max-width: 800px) {
 
-  header div img {
+  .header1 div img {
     display: none;
   }
 
@@ -212,7 +212,7 @@ header .intro h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 141px;
+  gap: 111px;
   padding-top: 10px;
 
 }
@@ -275,7 +275,7 @@ header .intro h3 {
   }
 }
 
-/*styling specials component*/
+/*styling specials component end here*/
 
 /*styling Footer component*/
 footer {
@@ -377,3 +377,5 @@ overflow : hidden;
    
 }
 }
+
+
