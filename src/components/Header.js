@@ -16,7 +16,7 @@ function Header() {
       <h1>Little Lemon</h1>
       <h3>Chicago</h3>
       <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-      <Link to="/Bookingpage"><button className='btn'>Reserve a table</button></Link>
+      <Link to="/Bookingpage"><button className='btn' aria-label='On Click'>Reserve a table</button></Link>
       </section>
       
      <div>

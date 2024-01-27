@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import "./form.css"
 import restaurant from "../assets/images/restaurant.jpg"
 import { Link } from 'react-router-dom';
@@ -19,6 +19,8 @@ const Bookingform = (props) => {
   }
 
 
+
+
   return (
     <>
       <header>
@@ -37,7 +39,7 @@ const Bookingform = (props) => {
                   <label htmlFor='time'>time</label>
                   <select id='time' value={time} onChange={(e) => {
                     setTime(e.target.value)
-                  }}>
+                  }} required>
                     <option>Select Date</option>
                     {
                       props.availableTimes.availableTimes.map(availableTimes => {
@@ -65,7 +67,7 @@ const Bookingform = (props) => {
                   </select>
                 </div>
                 <div>
-               <Link to= '/Confirmed'><button className='btn3'>Reserve Now</button></Link>
+               <Link to= '/Confirmed'><button className='btn3'  disabled={(!date,!guest,!occasion,!time)} aria-label='On Click'>Reserve Now</button></Link>
               </div>
               </div>
               <div className='pic'>
